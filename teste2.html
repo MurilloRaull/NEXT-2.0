@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="teste2.css">
+</head>
+<body>
+    <header>
+        <img class="logo"src="Projetos.png.png" alt="logo">
+            <div class="menu">
+                <ul>
+                    <li class="itens"><a href="teste.html">HOME</a></li>
+                    <li class="itens"><a href="teste2.html">PROJETOS</a></li>
+                    <li class="itens"><a href="teste3.html">SOBRE NÓS</a> </li>
+                    
+                </ul>
+            </div>
+    </header>
+   <section>
+
+    <div class="carrosel">
+        
+        <img src="Arduino.jpg" alt="Image 1">
+        <img src="Arduino2 (2).jpg" alt="Image 2">
+        <img src="LED_RGB.jpg" alt="Image 3">
+        <div class="projetos">
+            
+        </div>
+        <p class="projetos">
+       
+    </div>
+
+   <div class="projetos">
+        <h1>LED_RGB</h1>
+        Este componente é uma combinação de três LEDs, um para cada cor primária (vermelho, verde e azul). Ao combinar as intensidades desses LEDs, podemos criar uma infinidade de cores e iluminar a área desejada.
+    
+   
+        <h2>SENSOR LDR</h2>
+        Sensor LDR: O sensor LDR, ou Light Dependent Resistor, é um componente sensível à luz que nos permite detectar e responder à presença de luz ambiente. Por exemplo, um sensor LDR pode ser usado para acionar um motor quando a área ao redor está iluminada.
+    </div>
+  
+
+    <div class="txt-1">
+        <h1>Qual a finalidade da Robótica?</h1>
+        <p>  <strong> A tecnologia robótica está cada vez mais presente em nossas vidas, oferecendo soluções práticas e eficientes para uma ampla variedade de problemas. A robótica tem como objetivo principal a criação de robôs autônomos, programáveis e versáteis que podem executar uma ampla gama de tarefas, desde a limpeza doméstica até a assistência médica.</strong></p>
+    </div>
+
+   </section>
+    
+    <footer>
+       <img class="logo-footer"src="Projetos.png.png" alt="logo">
+        <p>
+            <a class="colegio" href="https://www.unidadepolo.com.br/">colégio Estadual Unidade Polo - Alunos </a>&copy;  
+        </p>
+        <p class="endereço"><a href="https://www.google.com/maps/place/Unidade+Polo,+C+E-Ef+M+P/@-23.2641758,-51.0381975,15z/data=!4m6!3m5!1s0x94eb47ca7de7359d:0xd9c73ad5f8b13943!8m2!3d-23.2641758!4d-51.0381975!16s%2Fg%2F11gwmc393_?entry=ttu">Av. Eng. Francisco Beltrão, 1005 - Centro, Ibiporã - PR, 86200-000</a>  </p>
+        <p class="telefone"><strong><a href="https://www.unidadepolo.com.br/">Telefone: (43) 3258-2524</a>  </strong> </p>
+    </footer>
+    
+    
+    
+    
+    
+    
+    
+    <script>
+        var carouselImages = document.querySelectorAll('.carrosel img');
+var currentIndex = 0;
+
+function changeImage() {
+    carouselImages[currentIndex].style.opacity = 0;
+    currentIndex = (currentIndex + 1) % carouselImages.length;
+    carouselImages[currentIndex].style.opacity = 1;
+}
+
+setInterval(changeImage, 3000);                                          
+    </script>
+
+    
+    
+</body>
+</html>
